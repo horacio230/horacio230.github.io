@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Height Map Waves Simulation</title>
+  <title>Deformable Surface</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -25,6 +25,9 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
   <!-- =======================================================
   * Template Name: Lonely - v4.7.0
@@ -113,16 +116,23 @@
               <ul>
                 <li><strong>Category</strong>: Simulation</li>
                 <li><strong>Model</strong>: Spring-Mass Deformable Surface</li>
-                <li><strong>Project date</strong>: 26 May, 2022</li>
+                <li><strong>Project date</strong>: 12 May, 2022</li>
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>Height Map Waves Simulation and Rain Drops</h2>
+              <h2>Spring-Mass Deformable and Breakable Surface</h2>
               <p>
                 Deformable and breakable surface simulation using spring-mass model. Particle collisions also implementing spring-mass.
                 <br>
-                Wave equations:
+                Spring Hooke's Law:
+                <br>
+                \[F_k=k_s(L-L_0)\]
+                where:<br>
+                \(k_s:\) Spring strength constant factor<br>
+                \(L-L_0:\) Rest length
               </p>
+                <p>In spring-mass collision model, rest length is the addition of the radius of both particles \(L_0=r_1+r_2\). </p>
+                <p>If \(L > L_0\) the spring does not make force, otherwise if \(L \le L_0\) spring acts making particles be repelled.</p>
               <p>
               </p>
             </div>

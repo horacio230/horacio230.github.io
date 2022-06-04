@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>French Billiard</title>
+  <title>Fireworks</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -28,6 +28,9 @@
 
   <script src="assets/js/p5.js"></script>
   <script src="assets/js/fireworks.js"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
   <!-- =======================================================
   * Template Name: Lonely - v4.7.0
@@ -117,84 +120,24 @@
               <h3>Project information</h3>
               <ul>
                 <li><strong>Category</strong>: Simulation</li>
-                <li><strong>Model</strong>: Particle Collision - Velocity Model</li>
-                <li><strong>Project date</strong>: 27 April, 2022</li>
+                <li><strong>Model</strong>: Particle Emissor, Wind Force</li>
+                <li><strong>Project date</strong>: 24 March, 2022</li>
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>Velocity-based particle collision model</h2>
+              Click on the screen to launch a rocket.
+              <hr>
+              <h2>Fireworks - Particle Emissor</h2>
               <p>
-                Implementation of a french biliard using velocity-based particle collision model.
+                Fireworks implementation with wind using particle emissors.
               </p>
               <p>
-                Restitution:
-              <math display="block">
-                  <mrow>
-                    <mi>p&#8407;</mi>
-                    <mo>=</mo>
-                    <mi>n&#8407;</mi>
-                    <mo>+</mo>
-                    <mi>d</mi>
-                  </mrow>
-                </math>
+                Wind model based on dot product between particle and wind speed vectors.
               </p>
-              <p>
-                Response:
-                <math display="block" title=" v_{salida}= v_t+  v_n(-k_r * v_w) ">
-                  <mrow>
-                    <msub>
-                      <mrow>
-                        <mi>v</mi>
-                      </mrow>
-                      <mrow>
-                        <mi>out</mi>
-                      </mrow>
-                    </msub>
-                    <mo>=</mo>
-                    <msub>
-                      <mrow>
-                        <mi>v</mi>
-                      </mrow>
-                      <mrow>
-                        <mi>t</mi>
-                      </mrow>
-                    </msub>
-                    <mo>+</mo>
-                    <msub>
-                      <mrow>
-                        <mi>v</mi>
-                      </mrow>
-                      <mrow>
-                        <mi>n</mi>
-                      </mrow>
-                    </msub>
-                    <mo stretchy="false">(</mo>
-                    <mo>-</mo>
-                    <msub>
-                      <mrow>
-                        <mi>k</mi>
-                      </mrow>
-                      <mrow>
-                        <mi>r</mi>
-                      </mrow>
-                    </msub>
-                    <mo>*</mo>
-                    <msub>
-                      <mrow>
-                        <mi>v</mi>
-                      </mrow>
-                      <mrow>
-                        <mi>w</mi>
-                      </mrow>
-                    </msub>
-                    <mo stretchy="false">)</mo>
-                  </mrow>
-                </math>
+              <p>Wind force module: \[||\vec F_w|| = -(\vec v \cdot \vec v_w )||\vec v||+||\vec v_w||,\]
+                Where if \(||\vec F_w|| \lt 0, \, ||\vec w||=0\)
               </p>
-            </div>
-          </div>
-
-        </div>
+              <p>\(\vec F_w\) direction is the same as wind speed.</p>
 
       </div>
     </section><!-- End Portfolio Details Section -->

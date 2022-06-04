@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>French Billiard</title>
+  <title>Pong</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -28,6 +28,9 @@
 
   <script src="assets/js/p5.js"></script>
   <script src="assets/js/pong.js"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
   <!-- =======================================================
   * Template Name: Lonely - v4.7.0
@@ -116,81 +119,24 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Simulation</li>
-                <li><strong>Model</strong>: Particle Collision - Velocity Model</li>
-                <li><strong>Project date</strong>: 27 April, 2022</li>
+                <li><strong>Category</strong>: Game</li>
+                <li><strong>Model</strong>: Pong</li>
+                <li><strong>Project date</strong>: 18 March, 2022</li>
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>Velocity-based particle collision model</h2>
+              <h2>Classic Pong Game</h2>
               <p>
-                Implementation of a french biliard using velocity-based particle collision model.
+                Classic pong game for 2 players:
               </p>
               <p>
-                Restitution:
-              <math display="block">
-                  <mrow>
-                    <mi>p&#8407;</mi>
-                    <mo>=</mo>
-                    <mi>n&#8407;</mi>
-                    <mo>+</mo>
-                    <mi>d</mi>
-                  </mrow>
-                </math>
+                -Player 1: Key W (UP), Key S (DOWN)
               </p>
               <p>
-                Response:
-                <math display="block" title=" v_{salida}= v_t+  v_n(-k_r * v_w) ">
-                  <mrow>
-                    <msub>
-                      <mrow>
-                        <mi>v</mi>
-                      </mrow>
-                      <mrow>
-                        <mi>out</mi>
-                      </mrow>
-                    </msub>
-                    <mo>=</mo>
-                    <msub>
-                      <mrow>
-                        <mi>v</mi>
-                      </mrow>
-                      <mrow>
-                        <mi>t</mi>
-                      </mrow>
-                    </msub>
-                    <mo>+</mo>
-                    <msub>
-                      <mrow>
-                        <mi>v</mi>
-                      </mrow>
-                      <mrow>
-                        <mi>n</mi>
-                      </mrow>
-                    </msub>
-                    <mo stretchy="false">(</mo>
-                    <mo>-</mo>
-                    <msub>
-                      <mrow>
-                        <mi>k</mi>
-                      </mrow>
-                      <mrow>
-                        <mi>r</mi>
-                      </mrow>
-                    </msub>
-                    <mo>*</mo>
-                    <msub>
-                      <mrow>
-                        <mi>v</mi>
-                      </mrow>
-                      <mrow>
-                        <mi>w</mi>
-                      </mrow>
-                    </msub>
-                    <mo stretchy="false">)</mo>
-                  </mrow>
-                </math>
+                -Player 2:
+                  Use arrow keys
               </p>
+              Ball rebound angle is proportional to distance between collision and paddle center:
             </div>
           </div>
 
