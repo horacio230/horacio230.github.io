@@ -278,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 75vh;
   /*background: url("../img/hero-bg1.jpg") top center;*/
-  background: url("https://as1.ftcdn.net/v2/jpg/02/97/43/18/1000_F_297431868_mHP5LzdzM13zo2wFZHN4snG0LRsd7Knj.jpg") top center;
+  background: url("../img/background1.jpg") top center;
   background-size: cover;
   padding: 0 15px;
 }
@@ -570,6 +570,8 @@ section {
   border-radius: 8px;
   text-align: center;
   z-index: 1;
+  width: 100%;
+  margin-bottom: 20px;
 }
 .services .icon-box::before {
   content: "";
