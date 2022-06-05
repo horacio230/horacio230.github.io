@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Smoke</title>
+  <title>Hair</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -27,7 +27,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <script src="assets/js/p5.js"></script>
-  <script src="assets/js/smoke.js"></script>
+  <script src="assets/js/rope.js"></script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -120,23 +120,24 @@
               <h3>Project information</h3>
               <ul>
                 <li><strong>Category</strong>: Simulation</li>
-                <li><strong>Model</strong>: Particle Emissor - Smoke, Wind</li>
-                <li><strong>Project date</strong>: 23 April, 2022</li>
+                <li><strong>Model</strong>: Deformable Rope - Spring-Mass</li>
+                <li><strong>Project date</strong>: 27 May, 2022</li>
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>Smoke Particle Emissor with Wind</h2>
+              <h2>Hair Simulation</h2>
               <p>
-                Particle emissor with scale and transparency effects that simulates smoke.
-                <br>Due to browser performance circles are being drawn instead of gradient textures.
+                Hair simulation with a variable number of ropes. Due to browser performance only two ropes have been included.
+                Each single rope is made up of a string of particles joined with springs.<br> It is possible to click and drag one particle to change its position.
               </p>
               <p>
-                Wind model based on dot product between particle and wind speed vectors.
+                Spring Hooke's Law:
+                <br>
+                \[F_k=k_s(L-L_0)\]
+                where:<br>
+                \(k_s:\) Spring strength constant factor<br>
+                \(L-L_0:\) Rest length
               </p>
-              <p>Wind force module: \[||\vec F_w|| = -(\vec v \cdot \vec v_w )||\vec v||+||\vec v_w||,\]
-                Where if \(||\vec F_w|| \lt 0, \, ||\vec w||=0\)
-              </p>
-              <p>\(\vec F_w\) direction is the same as wind speed.</p>
             </div>
           </div>
 
