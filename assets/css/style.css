@@ -279,6 +279,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 75vh;
   /*background: url("../img/hero-bg1.jpg") top center;*/
   background: url("../img/render-sunset.png") top center;
+  background-size: cover;
   padding: 0 15px;
 }
 #hero h1 {
