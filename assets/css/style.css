@@ -278,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 75vh;
   /*background: url("../img/hero-bg1.jpg") top center;*/
-  background: url("../img/background1.jpg") top center;
+  background: url("../img/render-sunset.png") top center;
   background-size: cover;
   padding: 0 15px;
 }
@@ -290,10 +290,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 #hero h2 {
-  color: #eee;
+  color: #fff;
   margin-bottom: 10px;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 400;
   font-family: "Poppins", sans-serif;
 }
 #hero .btn-get-started {
