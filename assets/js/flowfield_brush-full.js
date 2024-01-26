@@ -23,7 +23,7 @@ let color2 = 30;
 
 function setup() {
   print(document.body.clientWidth-300);
-  createCanvas(document.body.offsetWidth-300, document.body.offsetHeight);
+  createCanvas(windowWidth, windowHeight);
 
   colorPick();
 
@@ -262,4 +262,27 @@ function colorPick(value1, value2) {
   color2 = parseInt(value2);
   document.getElementById('colorBox2').style.backgroundColor = `hsl(${color2}, 100%, 50%)`;
   document.getElementById('mySlider2').value = color2;
+};
+
+// Add the window onload function
+/*
+window.onload = function() {
+  var canvas = document.getElementById('p5-canvas');
+  function resizeCanvas() {
+    canvas.style.width = window.innerWidth;
+    canvas.style.height = window.innerHeight;
+  }
+  resizeCanvas();
+  window.addEventListener('resize', resizeCanvas);
+};*/
+
+window.onload = function() {
+  document.getElementById('settings-toggle').addEventListener('click', function() {
+    var settings = document.getElementById('settings');
+    if (settings.style.transform === 'translateX(-100%)'){
+      settings.style.transform = 'translateX(0%)';
+    } else {
+      settings.style.transform = 'translateX(-100%)';
+    } 
+  });
 };

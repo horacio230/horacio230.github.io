@@ -13,46 +13,46 @@
 </head>
 
 <body>
-  <div>
+    <button id="settings-toggle">Show/Hide Settings Panel</button>
+    <div id="settings">
 
-    <form id="settings">
-      <fieldset>
-        <legend>Flow Field</legend>
-        <label for="stability">Stability</label>
-        <input id="stability" oninput="setup()" type="range" value="0.5" min="0.001" max="0.5" step="0.005">
-        <input id="showvectors" type="checkbox" onclick="drawVectors(this.checked)">
-        <label for="showvectors">Show Vectors</label>
-        <br>
-        <input id="fieldMove" type="checkbox" onclick="flowFieldMove(this.checked)">
-        <label for="fieldMove">Field Move</label>
-      </fieldset>
-      <fieldset>
-        <legend>Brush</legend>
-        <label for="radius">Radius</label>
-        <input id="radius" oninput="" type="range" value="30" min="1" max="300">
-        <label for="density">Density</label>
-        <input id="density" oninput="" type="range" value="5" min="1" max="10">
-      </fieldset>
-      <fieldset>
-        <legend>Color Gradient</legend>
-        <label for="density">Color 1</label>
-        <input id="mySlider1" type="range" step="1" min="0" max="360" value="180" oninput="colorPick(this.value, null)">
-        <div id="colorBox1" style="width: 50px; height: 50px; background-color: hsl(0, 100%, 50%)"></div>
-        <label for="density">Color 2</label>
-        <input id="mySlider2" type="range" step="1" min="0" max="360" value="180" oninput="colorPick(null, this.value)">
-        <div id="colorBox2" style="width: 50px; height: 50px; background-color: hsl(0, 100%, 50%)"></div>
-      </fieldset>
-      <fieldset>
-        <input type="button" value="Reset Canvas" onclick="setup()">
-      </fieldset>
-        <hr>
-      <fieldset>
-        <a href="index.html" title="Back"><input type="button"
-            value="Back to Projects"></a>
-      </fieldset>
-    </form>
-
-  </div>
+      <form>
+        <fieldset>
+          <legend>Flow Field</legend>
+          <label for="stability">Stability</label>
+          <input id="stability" oninput="setup()" type="range" value="0.5" min="0.001" max="0.5" step="0.005">
+          <input id="showvectors" type="checkbox" onclick="drawVectors(this.checked)">
+          <label for="showvectors">Show Vectors</label>
+          <br>
+          <input id="fieldMove" type="checkbox" onclick="flowFieldMove(this.checked)">
+          <label for="fieldMove">Field Move</label>
+        </fieldset>
+        <fieldset>
+          <legend>Brush</legend>
+          <label for="radius">Radius</label>
+          <input id="radius" oninput="" type="range" value="30" min="1" max="300">
+          <label for="density">Density</label>
+          <input id="density" oninput="" type="range" value="5" min="1" max="10">
+        </fieldset>
+        <fieldset>
+          <legend>Color Gradient</legend>
+          <label for="density">Color 1</label>
+          <input id="mySlider1" type="range" step="1" min="0" max="360" value="180" oninput="colorPick(this.value, null)">
+          <div id="colorBox1" style="width: 50px; height: 50px; background-color: hsl(0, 100%, 50%)"></div>
+          <label for="density">Color 2</label>
+          <input id="mySlider2" type="range" step="1" min="0" max="360" value="180" oninput="colorPick(null, this.value)">
+          <div id="colorBox2" style="width: 50px; height: 50px; background-color: hsl(0, 100%, 50%)"></div>
+        </fieldset>
+        <fieldset>
+          <input type="button" value="Reset Canvas" onclick="setup()" class="styled-button">
+        </fieldset>
+          <hr>
+        <fieldset>
+          <a href="index.html" title="Back"><input type="button"
+              value="Back to Projects" class="styled-button"></a>
+        </fieldset>
+      </form>
+    </div>
 
   <div id="p5-canvas"></div>
 
