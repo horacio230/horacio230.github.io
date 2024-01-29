@@ -286,3 +286,9 @@ window.onload = function() {
     } 
   });
 };
+
+window.addEventListener('load', function() {
+  document.addEventListener('touchmove', function(e) {
+    e.preventDefault();
+  }, { passive: false });
+});
