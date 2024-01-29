@@ -19,7 +19,7 @@ let PARTICLE_TTL = 300;
 let _numParticles;
 
 let color1 = 0;
-let color2 = 30;
+let color2 = 250;
 
 function setup() {
   print(document.body.clientWidth-300);
@@ -105,7 +105,7 @@ function addParticles() {
     let origin = createVector(width, height / 2);
     let pos = createVector(mouseX, mouseY);
     let vel = createVector((pos.x - origin.x), (pos.y - origin.y));
-    let c = color(map(noise(millis()), 0, 1, color1, color2), 70, map(noise(millis()), 0, 1, 0, 100));
+    let c = color(random(color1, color2), 70, map(noise(millis()), 0, 1, 0, 100));
     let offset;
     for (let i = 0; i < SLIDER_BRUSH_PARTICLES.value; i++) {
       offset = createVector(random(-1, 1), random(-1, 1)).normalize().mult(random(SLIDER_BRUSH_RADIUS.value));
