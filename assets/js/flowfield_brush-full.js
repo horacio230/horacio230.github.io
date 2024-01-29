@@ -91,7 +91,15 @@ function keyPressed() {
   }
 }
 
+function mousePressed() {
+  addParticles();
+}
+
 function mouseDragged() {
+  addParticles();
+}
+
+function addParticles() {
   if (mouseX > 0)
   {
     let origin = createVector(width, height / 2);
@@ -105,6 +113,8 @@ function mouseDragged() {
     }
   }
 }
+
+
 
 class Particle {
 
